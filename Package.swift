@@ -1,4 +1,4 @@
-// swift-tools-version: 5.7
+// swift-tools-version: 5.9
 import PackageDescription
 let package = Package(name: "AVIConverterLibraries", platforms: [.iOS(.v17)], products: [.library(name: "FFmpeg-Kit", type: .dynamic, targets: ["FFmpeg-Kit"])], targets: [
 .target(name: "FFmpeg-Kit", dependencies: ["ffmpegkit", "libavcodec", "libavdevice", "libavfilter", "libavformat", "libavutil", "libswresample", "libswscale"]),
