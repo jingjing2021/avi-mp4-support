@@ -1,6 +1,6 @@
 # Library sources and rebuild instructions — package 0.1.0
 
-These materials correspond to the replacement libraries for AVI 转 MP4 1.0.1 (10), not the historical precompiled libraries in 1.0 (9).
+These library sources correspond to AVI 转 MP4 1.0.1 builds 10 and 11, not the historical precompiled libraries in 1.0 (9).
 
 ## Sources
 
@@ -48,3 +48,12 @@ The application dynamically loads the eight frameworks using their existing inst
 Download the [application object-code kit for 1.0.1 (10)](https://github.com/jingjing2021/avi-mp4-support/releases/download/0.1.0/application-object-kit-1.0.1-10.zip), verify its [SHA-256](APPLICATION-KIT-SHA256.txt), and follow its README. It includes release application objects, an unencrypted device app bundle, `relink.sh`, `install.sh`, complete notices and an [application object-code permission](APPLICATION-PERMISSION.md) allowing library replacement, relinking and debugging those modifications. The application Swift source remains private.
 
 The supplied device application objects have been successfully relinked with modified, source-built libraries. A separate iOS 18.6 Simulator application relinked from same-version Simulator objects executed the modified library marker and passed batch conversion; see [validation evidence](VALIDATION.md). Independent-recipient signing and physical-device installation/execution using modified libraries have not yet been verified. The kit does not contain signing credentials or an encrypted App Store download. This document alone does not claim that all LGPL replacement/installation requirements have been satisfied. Questions: jy17yyy@gmail.com.
+
+## Application objects by build
+
+Use the application kit matching your installed build; the corresponding FFmpeg library sources are shared by both builds.
+
+- [1.0.1 (11) — automatic quality](https://github.com/jingjing2021/avi-mp4-support/releases/download/0.1.0/application-object-kit-1.0.1-11.zip)
+- [1.0.1 (10)](https://github.com/jingjing2021/avi-mp4-support/releases/download/0.1.0/application-object-kit-1.0.1-10.zip)
+
+Build 11 adds an automatic resolution/frame-rate based bitrate policy and removes the three-way quality selector. It uses the same library package and notices. Its own release object files were successfully relinked, and its standard application passed the iOS 18.6 Simulator batch conversion test. This does not add physical-device modified-library installation validation.

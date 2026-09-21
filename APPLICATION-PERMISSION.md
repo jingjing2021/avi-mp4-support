@@ -1,4 +1,4 @@
-# Application object-code permission — AVI 转 MP4 1.0.1 (10)
+# Application object-code permission — AVI 转 MP4 1.0.1 (10 and 11)
 
 The application provider grants each recipient a worldwide, royalty-free permission to copy and use the application object files and resources in this kit to recombine or relink the application with a modified, interface-compatible version of its LGPL-covered libraries, to produce and install the resulting modified application, and to run it on devices the recipient owns or controls. Modification of the library portions and reverse engineering of the combined application for debugging those modifications are permitted.
 

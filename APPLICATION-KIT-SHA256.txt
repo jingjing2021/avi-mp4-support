@@ -1,1 +1,2 @@
 8dfe6ecca55f17be2549e029df42fee27e3d54187f9636a1e08125422499b622  application-object-kit-1.0.1-10.zip
+5c992ceca48f195887f07d833aa941e926ab137207b45b7d99c9ae60fb8b7122  application-object-kit-1.0.1-11.zip
