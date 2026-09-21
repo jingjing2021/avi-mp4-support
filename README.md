@@ -23,3 +23,5 @@
 [隐私政策](PRIVACY.md)
 
 [开源软件与许可](OPEN_SOURCE.md)
+
+本应用使用 LGPL v3 许可的 FFmpegKit / FFmpeg。[对应库源码与许可](https://github.com/jingjing2021/avi-mp4-support/releases/tag/0.1.0) · [替换库与重新链接说明](REBUILD.md)。

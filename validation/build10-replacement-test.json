@@ -1,0 +1,41 @@
+{
+  "device_modified_library_relink": true,
+  "runtime_marker": "AVI_LGPL_REPLACEMENT_20260921",
+  "modified_library_sha256": {
+    "iphoneos": "7be8c2207f1442070050f61dbcec3fd3cca0cea8e9da8464bb4c2b605e45fac4",
+    "iphonesimulator": "5399616e83a8254ea6851e7562308af75ec5945ad51ed71ab41ed683b64b6372"
+  },
+  "source_archives_downloaded_from_public_release": true,
+  "source_archive_sha256": "30026d9e2348a32fa8e567b911bca0dbc336f8fe86468fdc86083677616ca791",
+  "empty_git_refs_directory_recreation_required": true,
+  "simulator_ios": "18.6",
+  "simulator_runtime_marker_count": 8,
+  "simulator_app_relinked_from_same_version_simulator_objects": true,
+  "simulator_build_directory_library_lookup_removed": true,
+  "simulator_batch_report": {
+    "items": [
+      {
+        "detail": "170 KB",
+        "name": "sample.avi",
+        "output": "sample-CA9996C9-AAB8-4D8F-B64C-E6F9DBA7993D.mp4",
+        "state": "已完成"
+      },
+      {
+        "detail": "转换失败，请检查文件是否完整",
+        "name": "broken.avi",
+        "output": "",
+        "state": "失败"
+      },
+      {
+        "detail": "170 KB",
+        "name": "sample.avi",
+        "output": "sample-571C5029-9479-42F1-AB75-5C1025EFE908.mp4",
+        "state": "已完成"
+      }
+    ],
+    "overallProgress": 1,
+    "status": "本次完成 2 个 · 失败 1 个，可重试"
+  },
+  "physical_device_modified_library_install_tested": false,
+  "independent_recipient_signing_tested": false
+}

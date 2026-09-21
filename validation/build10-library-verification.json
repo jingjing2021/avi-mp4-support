@@ -1,0 +1,180 @@
+{
+  "version": "1.0.1",
+  "build": 10,
+  "method": "Compare every Mach-O section, excluding code-signature metadata; verify release archive hashes against pinned Swift package checksums.",
+  "libraries": {
+    "ffmpegkit": {
+      "package_zip_sha256": "46a69b396d97c90ac852e9e53297441c3f706584186c47bb5fbac9e139916e3e",
+      "public_device_binary_sha256": "c3a0fbf27aec147bcc5fd81f5e4dc444b2be6cab5c6fd720ff744ee61745c02c",
+      "signed_archived_binary_sha256": "66f20dd01bb1ebcdd3eeff2ec0559d463c6b021a03cceac7bc9be20f5796ddf3",
+      "all_macho_sections_match": true,
+      "section_count": 31,
+      "dependencies": [
+        "@rpath/ffmpegkit.framework/ffmpegkit (compatibility version 1.0.0, current version 1.0.0)",
+        "/System/Library/Frameworks/Foundation.framework/Foundation (compatibility version 300.0.0, current version 5027.0.69)",
+        "/System/Library/Frameworks/CoreVideo.framework/CoreVideo (compatibility version 1.2.0, current version 758.27.0)",
+        "@rpath/libavdevice.framework/libavdevice (compatibility version 59.0.0, current version 59.7.100)",
+        "/usr/lib/libc++.1.dylib (compatibility version 1.0.0, current version 2200.27.0)",
+        "@rpath/libavcodec.framework/libavcodec (compatibility version 59.0.0, current version 59.37.100)",
+        "@rpath/libavfilter.framework/libavfilter (compatibility version 8.0.0, current version 8.44.100)",
+        "@rpath/libavformat.framework/libavformat (compatibility version 59.0.0, current version 59.27.100)",
+        "@rpath/libavutil.framework/libavutil (compatibility version 57.0.0, current version 57.28.100)",
+        "@rpath/libswscale.framework/libswscale (compatibility version 6.0.0, current version 6.7.100)",
+        "@rpath/libswresample.framework/libswresample (compatibility version 4.0.0, current version 4.7.100)",
+        "/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1359.0.0)",
+        "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation (compatibility version 150.0.0, current version 5027.0.69)",
+        "/usr/lib/libobjc.A.dylib (compatibility version 1.0.0, current version 228.0.0)"
+      ]
+    },
+    "libavcodec": {
+      "package_zip_sha256": "9a8937c2aeaca163a081b8832eddd456939ce441ac58670cf2dad986e2dceaa3",
+      "public_device_binary_sha256": "da62edf4f2b1270cf9452dfcc38d00910cdf4a66f0d085aee036c3ada3e8ee50",
+      "signed_archived_binary_sha256": "cd1ff5792841af2aac3fa8f78468ceee535d5622c7c0eb40aa29c02d04b0a7b8",
+      "all_macho_sections_match": true,
+      "section_count": 13,
+      "dependencies": [
+        "@rpath/libavcodec.framework/libavcodec (compatibility version 59.0.0, current version 59.37.100)",
+        "/usr/lib/libz.1.dylib (compatibility version 1.0.0, current version 1.2.12)",
+        "/usr/lib/libbz2.1.0.dylib (compatibility version 1.0.0, current version 1.0.8)",
+        "/usr/lib/libc++.1.dylib (compatibility version 1.0.0, current version 2200.27.0)",
+        "@rpath/libswresample.framework/libswresample (compatibility version 4.0.0, current version 4.7.100)",
+        "@rpath/libavutil.framework/libavutil (compatibility version 57.0.0, current version 57.28.100)",
+        "/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1359.0.0)",
+        "/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox (compatibility version 1.0.0, current version 1000.0.0)",
+        "/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox (compatibility version 1.0.0, current version 3350.77.1)",
+        "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation (compatibility version 150.0.0, current version 5027.0.69)",
+        "/System/Library/Frameworks/CoreMedia.framework/CoreMedia (compatibility version 1.0.0, current version 3350.77.1)",
+        "/System/Library/Frameworks/CoreVideo.framework/CoreVideo (compatibility version 1.2.0, current version 758.27.0)"
+      ]
+    },
+    "libavdevice": {
+      "package_zip_sha256": "b84db19c647cf93e1879810cb1e82505cf66f23891dd22e1a5b49a301735d01b",
+      "public_device_binary_sha256": "41bbef9e7a6d26de3bfff3ffe23a660b99c61c00c68c5ea5a643fc57f57ae43a",
+      "signed_archived_binary_sha256": "becfbe20ee39272c5ae839285a3506bccdab7750a462ca543ec2e43f3cfed05a",
+      "all_macho_sections_match": true,
+      "section_count": 8,
+      "dependencies": [
+        "@rpath/libavdevice.framework/libavdevice (compatibility version 59.0.0, current version 59.7.100)",
+        "/usr/lib/libz.1.dylib (compatibility version 1.0.0, current version 1.2.12)",
+        "/usr/lib/libbz2.1.0.dylib (compatibility version 1.0.0, current version 1.0.8)",
+        "/usr/lib/libc++.1.dylib (compatibility version 1.0.0, current version 2200.27.0)",
+        "@rpath/libavfilter.framework/libavfilter (compatibility version 8.0.0, current version 8.44.100)",
+        "@rpath/libswscale.framework/libswscale (compatibility version 6.0.0, current version 6.7.100)",
+        "@rpath/libavformat.framework/libavformat (compatibility version 59.0.0, current version 59.27.100)",
+        "@rpath/libavcodec.framework/libavcodec (compatibility version 59.0.0, current version 59.37.100)",
+        "@rpath/libswresample.framework/libswresample (compatibility version 4.0.0, current version 4.7.100)",
+        "@rpath/libavutil.framework/libavutil (compatibility version 57.0.0, current version 57.28.100)",
+        "/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1359.0.0)",
+        "/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox (compatibility version 1.0.0, current version 1000.0.0)",
+        "/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox (compatibility version 1.0.0, current version 3350.77.1)",
+        "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation (compatibility version 150.0.0, current version 5027.0.69)",
+        "/System/Library/Frameworks/CoreMedia.framework/CoreMedia (compatibility version 1.0.0, current version 3350.77.1)",
+        "/System/Library/Frameworks/CoreVideo.framework/CoreVideo (compatibility version 1.2.0, current version 758.27.0)"
+      ]
+    },
+    "libavfilter": {
+      "package_zip_sha256": "3a9ca764b87c8868641cb9a5f5c88558fb727e8f6d9da11c6a76d20a97383da1",
+      "public_device_binary_sha256": "032a6aea26269a5cb4e1e3ef6255df9789551ee0be19aa4bdc206fe9099504e8",
+      "signed_archived_binary_sha256": "072bfb5675a80d9eb102a9fcf226040e59746a2ace5e7e4f0b7442b5ec3d99c4",
+      "all_macho_sections_match": true,
+      "section_count": 10,
+      "dependencies": [
+        "@rpath/libavfilter.framework/libavfilter (compatibility version 8.0.0, current version 8.44.100)",
+        "/usr/lib/libz.1.dylib (compatibility version 1.0.0, current version 1.2.12)",
+        "/usr/lib/libbz2.1.0.dylib (compatibility version 1.0.0, current version 1.0.8)",
+        "/usr/lib/libc++.1.dylib (compatibility version 1.0.0, current version 2200.27.0)",
+        "@rpath/libswscale.framework/libswscale (compatibility version 6.0.0, current version 6.7.100)",
+        "@rpath/libavformat.framework/libavformat (compatibility version 59.0.0, current version 59.27.100)",
+        "@rpath/libavcodec.framework/libavcodec (compatibility version 59.0.0, current version 59.37.100)",
+        "@rpath/libswresample.framework/libswresample (compatibility version 4.0.0, current version 4.7.100)",
+        "@rpath/libavutil.framework/libavutil (compatibility version 57.0.0, current version 57.28.100)",
+        "/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1359.0.0)",
+        "/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox (compatibility version 1.0.0, current version 1000.0.0)",
+        "/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox (compatibility version 1.0.0, current version 3350.77.1)",
+        "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation (compatibility version 150.0.0, current version 5027.0.69)",
+        "/System/Library/Frameworks/CoreMedia.framework/CoreMedia (compatibility version 1.0.0, current version 3350.77.1)",
+        "/System/Library/Frameworks/CoreVideo.framework/CoreVideo (compatibility version 1.2.0, current version 758.27.0)"
+      ]
+    },
+    "libavformat": {
+      "package_zip_sha256": "7ae594999b61c3bb94d6e739461ccc03d54b47d69005898c458ba3af3e4ff84e",
+      "public_device_binary_sha256": "70a4240a43ce24613f0c32b0019b5dcca1584ddf9d889900f38e84a71a4997d1",
+      "signed_archived_binary_sha256": "c43f8a98696739dbb7a534e48100f13a9b0a897c275290d039153ee41f45a37d",
+      "all_macho_sections_match": true,
+      "section_count": 9,
+      "dependencies": [
+        "@rpath/libavformat.framework/libavformat (compatibility version 59.0.0, current version 59.27.100)",
+        "/usr/lib/libz.1.dylib (compatibility version 1.0.0, current version 1.2.12)",
+        "/usr/lib/libbz2.1.0.dylib (compatibility version 1.0.0, current version 1.0.8)",
+        "/usr/lib/libc++.1.dylib (compatibility version 1.0.0, current version 2200.27.0)",
+        "@rpath/libavcodec.framework/libavcodec (compatibility version 59.0.0, current version 59.37.100)",
+        "@rpath/libswresample.framework/libswresample (compatibility version 4.0.0, current version 4.7.100)",
+        "@rpath/libavutil.framework/libavutil (compatibility version 57.0.0, current version 57.28.100)",
+        "/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1359.0.0)",
+        "/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox (compatibility version 1.0.0, current version 1000.0.0)",
+        "/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox (compatibility version 1.0.0, current version 3350.77.1)",
+        "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation (compatibility version 150.0.0, current version 5027.0.69)",
+        "/System/Library/Frameworks/CoreMedia.framework/CoreMedia (compatibility version 1.0.0, current version 3350.77.1)",
+        "/System/Library/Frameworks/CoreVideo.framework/CoreVideo (compatibility version 1.2.0, current version 758.27.0)"
+      ]
+    },
+    "libavutil": {
+      "package_zip_sha256": "e003f3e891676385db0dc91360054e7e42ca2ff7acd3d85f1a239e52a315dc0c",
+      "public_device_binary_sha256": "e919102f6e0f6379f40cf78eac59bb52c38e24df3e401d5cda129df58d9802cc",
+      "signed_archived_binary_sha256": "959113e51c4ac743881921a703cd6f1d67763f2acc85870c9e0dc5d7eb0ea4fe",
+      "all_macho_sections_match": true,
+      "section_count": 13,
+      "dependencies": [
+        "@rpath/libavutil.framework/libavutil (compatibility version 57.0.0, current version 57.28.100)",
+        "/usr/lib/libz.1.dylib (compatibility version 1.0.0, current version 1.2.12)",
+        "/usr/lib/libbz2.1.0.dylib (compatibility version 1.0.0, current version 1.0.8)",
+        "/usr/lib/libc++.1.dylib (compatibility version 1.0.0, current version 2200.27.0)",
+        "/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1359.0.0)",
+        "/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox (compatibility version 1.0.0, current version 3350.77.1)",
+        "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation (compatibility version 150.0.0, current version 5027.0.69)",
+        "/System/Library/Frameworks/CoreMedia.framework/CoreMedia (compatibility version 1.0.0, current version 3350.77.1)",
+        "/System/Library/Frameworks/CoreVideo.framework/CoreVideo (compatibility version 1.2.0, current version 758.27.0)"
+      ]
+    },
+    "libswresample": {
+      "package_zip_sha256": "534d4d968fbb903d89d399d0ccb7f1fbbfb9716c62501a89a66e0ab4379fb64c",
+      "public_device_binary_sha256": "2072729bbf005e7d419c0681fea402b577a3ff6cb5aebec535795f311d1b8f24",
+      "signed_archived_binary_sha256": "6b42798e1bc24662529f9fc9b69b1ca935fb60b8b88406f90b06d122d024e816",
+      "all_macho_sections_match": true,
+      "section_count": 8,
+      "dependencies": [
+        "@rpath/libswresample.framework/libswresample (compatibility version 4.0.0, current version 4.7.100)",
+        "/usr/lib/libz.1.dylib (compatibility version 1.0.0, current version 1.2.12)",
+        "/usr/lib/libbz2.1.0.dylib (compatibility version 1.0.0, current version 1.0.8)",
+        "/usr/lib/libc++.1.dylib (compatibility version 1.0.0, current version 2200.27.0)",
+        "@rpath/libavutil.framework/libavutil (compatibility version 57.0.0, current version 57.28.100)",
+        "/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1359.0.0)",
+        "/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox (compatibility version 1.0.0, current version 3350.77.1)",
+        "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation (compatibility version 150.0.0, current version 5027.0.69)",
+        "/System/Library/Frameworks/CoreMedia.framework/CoreMedia (compatibility version 1.0.0, current version 3350.77.1)",
+        "/System/Library/Frameworks/CoreVideo.framework/CoreVideo (compatibility version 1.2.0, current version 758.27.0)"
+      ]
+    },
+    "libswscale": {
+      "package_zip_sha256": "25a7f788a2f7d62b994160b8a85d2c466898289dc740ed3cbc5841042861e82e",
+      "public_device_binary_sha256": "df95c1ad2c3ff9d67dcb7366e552cf2edc463aee03fb1c84db78438e60a74362",
+      "signed_archived_binary_sha256": "b099a03b7f1eea43ead1ee835858a46f608c9e6b79db1bda479325ac1a77b288",
+      "all_macho_sections_match": true,
+      "section_count": 11,
+      "dependencies": [
+        "@rpath/libswscale.framework/libswscale (compatibility version 6.0.0, current version 6.7.100)",
+        "/usr/lib/libz.1.dylib (compatibility version 1.0.0, current version 1.2.12)",
+        "/usr/lib/libbz2.1.0.dylib (compatibility version 1.0.0, current version 1.0.8)",
+        "/usr/lib/libc++.1.dylib (compatibility version 1.0.0, current version 2200.27.0)",
+        "@rpath/libavutil.framework/libavutil (compatibility version 57.0.0, current version 57.28.100)",
+        "/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1359.0.0)",
+        "/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox (compatibility version 1.0.0, current version 3350.77.1)",
+        "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation (compatibility version 150.0.0, current version 5027.0.69)",
+        "/System/Library/Frameworks/CoreMedia.framework/CoreMedia (compatibility version 1.0.0, current version 3350.77.1)",
+        "/System/Library/Frameworks/CoreVideo.framework/CoreVideo (compatibility version 1.2.0, current version 758.27.0)"
+      ]
+    }
+  },
+  "complete_lgpl3_and_gpl3_texts_in_uploaded_app": true,
+  "notice_resource_matches_repository": true
+}
