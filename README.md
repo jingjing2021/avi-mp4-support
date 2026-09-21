@@ -21,3 +21,5 @@
 邮箱：[jy17yyy@gmail.com](mailto:jy17yyy@gmail.com)。请说明设备型号、系统版本和遇到的问题；无需发送个人视频，除非你自愿提供排查样本。
 
 [隐私政策](PRIVACY.md)
+
+[开源软件与许可](OPEN_SOURCE.md)
