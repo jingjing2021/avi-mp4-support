@@ -1,0 +1,26 @@
+[
+  {
+    "build": "10",
+    "packaging_revision": 2,
+    "file": "application-object-kit-1.0.1-10.zip",
+    "bytes": 7276396,
+    "sha256": "00094e632599c692839baba42ed0f427adf6745e3fdf185da99cccf8640b9649",
+    "source_zip_sha256": "8dfe6ecca55f17be2549e029df42fee27e3d54187f9636a1e08125422499b622",
+    "prelinked_application_executable_included": false,
+    "manifest_verified": true,
+    "relink_from_final_zip_exit_code": 0,
+    "physical_device_installation_tested": false
+  },
+  {
+    "build": "11",
+    "packaging_revision": 2,
+    "file": "application-object-kit-1.0.1-11.zip",
+    "bytes": 7275940,
+    "sha256": "36523de5da9f45a1f8179105ebd049c6788eb474aa24d60dacb46b4b76ac0cec",
+    "source_zip_sha256": "5c992ceca48f195887f07d833aa941e926ab137207b45b7d99c9ae60fb8b7122",
+    "prelinked_application_executable_included": false,
+    "manifest_verified": true,
+    "relink_from_final_zip_exit_code": 0,
+    "physical_device_installation_tested": false
+  }
+]

@@ -27,3 +27,7 @@
 - [应用目标文件授权](APPLICATION-PERMISSION.md)
 - [FFmpeg 官方说明](https://ffmpeg.org/legal.html)
 - 本次使用的 LGPL v3 第 4 条全文随应用及公开目标文件包提供。
+
+## 目标文件包修订 2（build 10、11）
+
+移除了无需分发的成品应用可执行文件，保留原有应用目标文件、资源、动态库、许可和脚本。两个最终 ZIP 分别解压后，清单校验与重新链接均通过。下载地址不变，SHA-256 已更新。这不构成真机安装验证或法律合规认证。[修订记录](validation/application-kit-packaging-v2.json)
