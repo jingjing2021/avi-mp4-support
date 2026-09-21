@@ -1,0 +1,32 @@
+# Library sources and rebuild instructions — package 0.1.0
+
+These materials correspond to the replacement libraries for AVI 转 MP4 1.0.1 (10), not the historical precompiled libraries in 1.0 (9).
+
+## Sources
+
+Download `library-sources.tar.gz`, `gnu-config.tar.gz` and `source-manifest.json` from [release 0.1.0](https://github.com/jingjing2021/avi-mp4-support/releases/tag/0.1.0). The release also contains all eight XCFrameworks consumed by Package.swift. SHA-256 hashes are recorded in the manifest and package definition. Source patches are included under `patches/` in the archive. LGPL v3 and GPL v3 texts are in the source tree; individual source file copyright notices are preserved.
+
+## Build
+
+Use a Mac with Xcode and command-line tools. The reference build uses Xcode 27.0, the iOS 27.0 SDK, and an iOS 17.0 minimum deployment target. Install `pkgconf`, `autoconf`, `automake`, and `libtool` with Homebrew. These are build tools, not code bundled into the app.
+
+Extract the source archive into a new empty working directory. It contains `ffmpeg-kit/`, `ffmpeg/`, `tools/` and `patches/`. Place `ffmpeg/` under `ffmpeg-kit/src/ffmpeg/`. The archives preserve public upstream Git revision data because upstream scripts use it. Place the extracted GNU config files under `ffmpeg-kit/.tmp/source/config/` and copy `tools/gas-preprocessor.pl` to `ffmpeg-kit/.tmp/gas-preprocessor.pl`.
+
+From `ffmpeg-kit/`, run:
+
+```sh
+export PATH="/opt/homebrew/bin:$PATH"
+./ios.sh -x --target=17.0 \
+  --disable-armv7 --disable-armv7s --disable-arm64e --disable-i386 \
+  --disable-x86-64 --disable-arm64-mac-catalyst --disable-x86-64-mac-catalyst \
+  --enable-ios-audiotoolbox --enable-ios-videotoolbox \
+  --enable-ios-zlib --enable-ios-bzip2
+```
+
+Outputs are under `prebuilt/bundle-apple-xcframework-ios/`. Make your changes to the library source before building. Upstream scripts reset and regenerate their own configure/logging workarounds; inspect the included patch records when modifying those particular files. No GPL/nonfree, GMP, GnuTLS or Nettle extras are enabled in this replacement package. Build dates and signatures may differ; exact source provenance does not imply bit-for-bit reproducibility across toolchains.
+
+## Modified library installation
+
+The application dynamically loads the eight frameworks using their existing install names. A modified library must retain the compatible API/ABI and framework names. Replace the corresponding framework in an unencrypted development application bundle and re-sign the frameworks and application with your own Apple development identity and provisioning profile. Install using Xcode or `xcrun devicectl device install app` on your own registered device; Simulator builds use Simulator frameworks and `xcrun simctl install` instead.
+
+Do not patch the encrypted App Store download or reuse the developer's private signing keys. An application object-code kit and installation script will be linked here after validation; that part of this remediation is not yet complete. This document alone does not claim that all LGPL replacement/installation requirements have been satisfied. Questions: jy17yyy@gmail.com.

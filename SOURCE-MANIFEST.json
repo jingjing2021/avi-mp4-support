@@ -1,0 +1,27 @@
+{
+  "ffmpeg-kit": {
+    "revision": "64585b76979df0f0283b0cb43db3e64c89b76be6",
+    "url": "https://github.com/arthenica/ffmpeg-kit.git"
+  },
+  "ffmpeg": {
+    "revision": "eacfcbae690f914a4b1b4ad06999f138540cc3d8",
+    "url": "https://github.com/arthenica/FFmpeg"
+  },
+  "toolchain": "Xcode 27.0\nBuild version 27A266a",
+  "minimum_ios": "17.0",
+  "architectures": [
+    "arm64-iphoneos",
+    "arm64-iphonesimulator"
+  ],
+  "source_archive_sha256": "30026d9e2348a32fa8e567b911bca0dbc336f8fe86468fdc86083677616ca791",
+  "gnu-config": {
+    "revision": "805517123cbfe33d17c989a18e78c5789fab0437",
+    "url": "https://github.com/arthenica/gnu-config",
+    "sha256": "dcce0bdff1e1c1e2a8518eb8056c6527a65943a2c4248c8bb1c8fbaa63758783"
+  },
+  "gas-preprocessor": {
+    "upstream": "https://github.com/arthenica/gas-preprocessor/tree/v20210917",
+    "bundled_path": "tools/gas-preprocessor.pl",
+    "sha256": "ed085dd43ed95759a2b84afc3b1f9b0b64114b586d0d4b16fbe164b4369ae844"
+  }
+}
