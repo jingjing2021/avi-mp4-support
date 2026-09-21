@@ -2,6 +2,17 @@
 
 AVI 转 MP4 使用 FFmpegKit / FFmpeg 及相关开源组件。第三方代码的版权属于各自作者，具体许可条款适用于对应组件；应用其他部分不因此成为开源软件。
 
+## 替换版本 1.0.1（10）
+
+此版本使用从已记录源码自行构建的 FFmpegKit / FFmpeg（LGPL v3）。
+
+- [完整第三方许可文本](licenses/BUILD-10-NOTICES.txt)。
+- [对应库源码、补丁及构建材料](https://github.com/jingjing2021/avi-mp4-support/releases/tag/0.1.0)。
+- [重新构建、应用目标文件包及安装说明](REBUILD.md)。
+- [目标文件使用授权](APPLICATION-PERMISSION.md)：允许用修改后的兼容库重新链接应用，并调试这些修改；应用 Swift 源码仍为私有。
+
+已验证目标文件可以重新链接；尚未完成独立用户签名及替换库后的真机安装验证。本节不代表旧版源码缺口已解决。
+
 ## 已发布版本 1.0（9）
 
 - 分发依赖：FFmpegKit SPM v5.1.2（ffmpeg-kit-https）。
